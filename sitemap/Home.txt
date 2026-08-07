@@ -1,32 +1,57 @@
-Home
+STUDENTHUB
+│
+├── Home
+│   ├── Login
+│   ├── Register
+│   └── About
+│
 ├── Login
+│   ├── Dashboard
+│   └── Register
+│
 ├── Register
-└── About
-
-Login
-├── Register
+│   ├── Dashboard
+│   └── Login
+│
 ├── Dashboard
-└── Home
-
-Register
-├── Login
-├── Dashboard
-└── Home
-
-Dashboard
-├── Attendance
-├── Notes
-├── Assignment
-├── Timetable
-├── Profile
-├── Feedback
-├── About
+│   ├── Attendance
+│   │   ├── Attendance %
+│   │   ├── Subject-wise Attendance
+│   │   └── Dashboard
+│   │
+│   ├── Notes
+│   │   ├── Search Notes
+│   │   ├── Download
+│   │   ├── View
+│   │   └── Dashboard
+│   │
+│   ├── Assignment
+│   │   ├── Assignment List
+│   │   ├── Due Date
+│   │   ├── Submit
+│   │   └── Dashboard
+│   │
+│   ├── Timetable
+│   │   ├── Weekly Schedule
+│   │   ├── Download
+│   │   └── Dashboard
+│   │
+│   ├── Profile
+│   │   ├── View Profile
+│   │   ├── Edit Profile
+│   │   └── Dashboard
+│   │
+│   ├── Feedback
+│   │   ├── Rating
+│   │   ├── Feedback Form
+│   │   └── Submit
+│   │
+│   └── About
+│       ├── Mission
+│       ├── Vision
+│       ├── Features
+│       ├── Developer
+│       └── Contact
+│
 └── Logout
-
-Attendance ───► Dashboard
-Notes ────────► Dashboard
-Assignment ───► Dashboard
-Timetable ────► Dashboard
-Profile ──────► Dashboard
-Feedback ─────► Dashboard
-About ────────► Home / Dashboard
+    └── Home
