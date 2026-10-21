@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub - Events</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>StudentHub Portal</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="events.html">Events</a>
+            <a href="notes.html">Notes</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="profile.html">Profile</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="about.html">About</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="events-container">
+
+            <h2>College Events</h2>
+
+
+            <!-- Search -->
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search events..."
+            >
+
+
+            <!-- Filter -->
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="Technical">
+                    Technical
+                </option>
+
+                <option value="Sports">
+                    Sports
+                </option>
+
+                <option value="Cultural">
+                    Cultural
+                </option>
+
+                <option value="Workshop">
+                    Workshop
+                </option>
+
+                <option value="Creative">
+                    Creative
+                </option>
+
+            </select>
+
+
+            <!-- Sort -->
+
+            <select id="sortSelect">
+
+                <option value="default">
+                    Sort By
+                </option>
+
+                <option value="az">
+                    Name A-Z
+                </option>
+
+                <option value="za">
+                    Name Z-A
+                </option>
+
+                <option value="date">
+                    Date
+                </option>
+
+            </select>
+
+
+            <!-- Loading -->
+
+            <p id="loading">
+                Loading events...
+            </p>
+
+
+            <!-- Error -->
+
+            <p id="error"></p>
+
+
+            <!-- Events -->
+
+            <div id="eventsList"
+                 class="events-grid">
+            </div>
+
+
+            <!-- Pagination -->
+
+            <div id="pagination"
+                 class="pagination">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 StudentHub Portal</p>
+
+    </footer>
+
+
+    <!-- IMPORTANT -->
+
+    <script src="./events.js"></script>
+
+</body>
+
+</html>

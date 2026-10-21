@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub - Register</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>StudentHub Portal</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="events.html">Events</a>
+            <a href="notes.html">Notes</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="profile.html">Profile</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="form-container">
+
+            <h2>Student Registration</h2>
+
+            <form action="register.php" method="POST" id="registerForm">
+
+                <!-- Name -->
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <small id="nameError"></small>
+
+
+                <!-- Email -->
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <small id="emailError"></small>
+
+
+                <!-- Mobile -->
+                <label for="mobile">Mobile Number</label>
+
+                <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="Enter 10 digit mobile number"
+                    required
+                >
+
+                <small id="mobileError"></small>
+
+
+                <!-- Password -->
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter password"
+                    required
+                >
+
+                <small id="passwordError"></small>
+
+                <div id="passwordStrength"></div>
+
+
+                <!-- Confirm Password -->
+                <label for="confirmPassword">Confirm Password</label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm password"
+                    required
+                >
+
+                <small id="confirmPasswordError"></small>
+
+
+                <!-- Course -->
+                <label for="course">Course</label>
+
+                <select id="course" name="course" required>
+
+                    <option value="">Select Course</option>
+
+                    <option value="CE">
+                        Computer Engineering
+                    </option>
+
+                    <option value="IT">
+                        Information Technology
+                    </option>
+
+                    <option value="CSE">
+                        Computer Science
+                    </option>
+
+                </select>
+
+                <small id="courseError"></small>
+
+
+                <!-- Year -->
+                <label for="year">Year</label>
+
+                <select id="year" name="year" required>
+
+                    <option value="">Select Year</option>
+
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="4">Fourth Year</option>
+
+                </select>
+
+                <small id="yearError"></small>
+
+
+                <!-- Gender -->
+                <label>Gender</label>
+
+                <div>
+
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Male"
+                    >
+                    Male
+
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Female"
+                    >
+                    Female
+
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Other"
+                    >
+                    Other
+
+                </div>
+
+                <small id="genderError"></small>
+
+
+                <!-- Terms -->
+                <div class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                    >
+
+                    <label for="terms">
+                        I agree to the Terms and Conditions
+                    </label>
+
+                </div>
+
+                <small id="termsError"></small>
+
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 StudentHub Portal</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
